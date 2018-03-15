@@ -1,6 +1,7 @@
 <template>
   <div class="form-container">
-    <form v-on:submit.prevent="onSubmit" name="contact" method="POST" action="thank-you" netlify>
+    <form v-on:submit.prevent="onSubmit" name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
       <label>Email:</label>
       <input type="text" name="name">
       <label>Message:</label>
@@ -16,7 +17,9 @@
     methods: {
       onSubmit: function ({target}) {
         var formData = new FormData(target);
-        fetch(target.getAttribute('action'), {
+        formData.append('form-name', 'contact')
+        fetch('/', {
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
           method: 'POST',
           body: formData
         })
