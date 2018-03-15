@@ -6,16 +6,16 @@
       </h1>
       <a href="https://medium.com/@iddar/descubriendo-un-nuevo-camino-135202f816ca">HISTORY</a>
     </div>
+    <contact-form />
   </section>
 </template>
 
 <script>
-// <!-- <app-logo /> -->
-// import AppLogo from '~/components/AppLogo.vue'
+import ContactForm from '~/components/ContactForm.vue'
 
 export default {
   components: {
-    // AppLogo
+    ContactForm
   },
   head: {
     link: [
