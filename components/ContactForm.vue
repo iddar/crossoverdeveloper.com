@@ -1,7 +1,6 @@
 <template>
   <div class="form-container">
     <form v-on:submit.prevent="onSubmit" name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="contact" />
       <label>Email:</label>
       <input type="text" name="name">
       <label>Message:</label>
