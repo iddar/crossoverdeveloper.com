@@ -6,7 +6,6 @@
       </h1>
       <a href="https://medium.com/@iddar/descubriendo-un-nuevo-camino-135202f816ca">HISTORY</a>
     </div>
-    <contact-form />
   </section>
 </template>
 
@@ -19,7 +18,7 @@ export default {
   },
   head: {
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Mina:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Arizonia|Mina:400,700' }
     ]
   }
 }
@@ -53,9 +52,12 @@ body {
 }
 
 .title span {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
   vertical-align: middle;
+  font-family: Arizonia;
+  margin-right: -15px;
+  margin-left: -5px;
 }
 
 a {
