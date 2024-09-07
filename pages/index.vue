@@ -5,6 +5,7 @@
         crossover<span>X</span>developer
       </h1>
       <a href="https://medium.com/@iddar/descubriendo-un-nuevo-camino-135202f816ca">HISTORY</a>
+      <p>2024</p>
     </div>
   </section>
 </template>
